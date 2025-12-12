@@ -1,0 +1,194 @@
+
+/* Container Principal */
+.cronometro-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.sistema-ponto {
+  width: 100%;
+  display: flex;
+  background-color: #FFFCFA;
+  border: 1px solid #34292A;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.fundo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #E2D6C7;
+  border-radius: 10px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  min-height: 280px;
+  gap: 20px;
+}
+
+/* --- LADO ESQUERDO (Cronômetro e Título) --- */
+.view-cronometro {
+  display: flex;         
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;          
+  flex: 1;
+}
+
+.box-tempo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Fonte grande com alinhamento na base para os segundos */
+.tempo-leitura {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 100px;
+  line-height: 1;
+  color: #34292A;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+/* Segundos com metade do tamanho */
+.segundos-pequenos {
+  font-size: 0.5em; 
+  color: #34292A;   
+  margin-left: 2px;
+}
+
+.icon-clock {
+  width: 35px;
+  height: 35px;
+  margin-top: 15px; 
+}
+
+.titulo-livro-lendo {
+  font-family: 'Zain', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #34292A;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+/* --- LADO DIREITO (Pontos e Botões) --- */
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  width: 40%; 
+  align-items: center;
+  gap: 15px;
+}
+
+/* Caixa de Pontos */
+.box-pontos {
+  background-color: #E8DED3;
+  border: 2px solid #34292A;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%; 
+  padding: 10px 0;
+  box-sizing: border-box; 
+  box-shadow: 0 4px 0px rgba(0,0,0,0.1);
+}
+
+.box-pontos p {
+  font-family: 'Zain', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #34292A;
+}
+
+.box-pontos h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  margin: 5px 0 0 0;
+  color: #34292A;
+  line-height: 1;
+}
+
+/* Botões de Controle */
+.controle-tempo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-controle {
+  flex: 1;
+  background-color: #FFFCFA;
+  border: 2px solid #34292A;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-family: 'Zain', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #34292A;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+}
+
+.btn-controle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+.btn-controle:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Botão Concluir */
+.btn-concluir {
+  width: 100%;
+  background-color: #34292A;
+  color: #E8E5E6;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  transition: all 0.2s;
+}
+
+.btn-concluir:hover {
+  background-color: #2b1e1f;
+  transform: scale(1.02);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .fundo {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+  
+  .view-cronometro {
+    margin-bottom: 20px;
+  }
+
+  .tempo-leitura {
+    font-size: 70px;
+  }
+
+  .coluna-direita {
+    width: 100%;
+  }
+}

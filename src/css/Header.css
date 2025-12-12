@@ -1,0 +1,141 @@
+/* src/css/Header.css */
+
+/* --- Header Desktop (Padrão) --- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: #FFFCFA;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 36px;
+  color: #E2D6C7;
+  -webkit-text-stroke: 1px #34292A;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  font-family: 'Abril Fatface', cursive;
+  background: #fff;
+  border: 2px solid #34292A;
+  border-radius: 12px;
+  padding: 8px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #34292A;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.nav-btn.ativo {
+  background-color: #ECE4DA;
+}
+
+.nav-btn:hover {
+  background-color: #f0e6dc;
+}
+
+.sair {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  color: #34292A;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* --- Header Mobile --- */
+.header-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #FFFCFA;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #d6ccc6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.header-mobile .logo {
+  font-size: 28px; 
+}
+
+.header-mobile .logout-link {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 18px;
+  color: #34292A;
+  text-decoration: underline;
+}
+
+/* --- Menu Inferior --- */
+.menu-inferior {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFCFA;
+  border-top: 1px solid #aaa;
+  z-index: 999;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.view-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-item {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #34292A;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 16px;
+  padding: 15px 0;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: none;
+}
+
+.menu-item:hover {
+  background-color: #ddd0c6;
+}
+
+.menu-item.ativo {
+  background-color: #ECE4DA;
+  border-top: 2px solid #34292A;
+  color: #34292A;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+
+  .menu-inferior {
+    display: block;
+  }
+}

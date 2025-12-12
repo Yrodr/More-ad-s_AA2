@@ -1,0 +1,148 @@
+
+/* --- Container Geral --- */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #FFFCFA; 
+  padding: 20px;
+}
+
+.logo2 {
+  font-size: 40px;
+  -webkit-text-stroke: 0.4px #34292A;
+  font-family: 'Abril Fatface', cursive;
+  color: #E2D6C7;
+  letter-spacing: 1px;
+}
+
+/* --- Caixa Branca do Formulário --- */
+.auth-box {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 340px; 
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E0D8D3;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+/* Título "Fazer Login" */
+.auth-box h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: #3F322E;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+/* --- Inputs --- */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #C9C0BB; 
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Istok Web', sans-serif;
+  color: #3F322E;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.input-group input::placeholder {
+  color: #8C7F7A;
+  opacity: 1;
+}
+
+.input-group input:focus {
+  border-color: #3F322E; 
+}
+
+/* --- Botão Principal --- */
+.btn-auth {
+  width: 100%;
+  padding: 15px;
+  background-color: #2D2222; 
+  color: #fff;
+  border: none;
+  border-radius: 12px; 
+  font-size: 20px;
+  font-family: 'Zain', sans-serif; 
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+
+.btn-auth:hover {
+  background-color: #3F322E;
+  transform: scale(1.01);
+}
+
+/* --- Link "Fazer Cadastro" --- */
+.link-auth {
+  display: block;
+  margin-top: 10px;
+  color: #584B46;
+  text-decoration: none;
+  font-family: 'Zain', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.link-auth:hover {
+  color: #3F322E;
+}
+
+/* --- Área da Foto (Cadastro) --- */
+.foto-upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.foto-label {
+  width: 200px;
+  height: 120px;
+  border-radius: 10%;
+  background-color: #f4f0ed;
+  border: 2px dashed #C9C0BB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #8C7F7A;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.foto-label span {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.foto-label:hover {
+  background-color: #e9e2de;
+  border-color: #3F322E;
+  color: #3F322E;
+}
+
+.foto-input {
+  display: none;
+}

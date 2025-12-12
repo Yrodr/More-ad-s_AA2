@@ -1,0 +1,348 @@
+/* src/css/Home.css */
+
+/* Layout Principal */
+.viewH {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* ---------- PERFIL SUPERIOR ---------- */
+.perfil-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.perfil {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFCFA;
+  border: 1px solid #34292A;
+  border-radius: 10px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  background-color: #E2E0DE;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.dados h2 {
+  font-family: 'Zain', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  color: #34292A;
+}
+
+.dados h3 {
+  font-family: 'Zain', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #34292A;
+}
+
+.dados p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #34292A;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.dados span {
+  font-size: 14px;
+  color: #6E6464;
+  font-family: 'Istok Web', sans-serif;
+}
+
+/* ---------- CRONÔMETRO ---------- */
+.cronometro {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #EAE0D6;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.box-tempo {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+.icon {
+  height: 30px;
+  width: auto;
+}
+
+.cronometro .tempo {
+  font-size: 60px;
+  font-weight: bold;
+  color: #34292A;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 1;
+}
+
+/* ---------- CONTEÚDO INFERIOR (LEITURAS) ---------- */
+.leituras-container {
+  width: 100%;
+  border: 1px solid #34292A;
+  border-radius: 10px;
+  background-color: #FFFCFA;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+/* ---------- ABAS ---------- */
+.tabs {
+  display: flex;
+  background-color: #34292A;
+  border-radius: 10px 10px 0px 0px;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.tab {
+  flex: 1;
+  text-align: center; 
+  background: transparent;
+  font-family: 'Amaranth', sans-serif;
+  color: #E8E5E6;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.tab.ativo {
+  background-color: #FFFCFA;
+  color: #34292A;
+  border-radius: 10px 10px 0 0;
+}
+
+.tab:not(.ativo):hover {
+  background-color: #4a3c3d;
+  color: #fff; 
+}
+
+/* ---------- GRID DE LIVROS (Minhas Leituras) ---------- */
+.livros-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 30px;
+}
+
+.livro-card {
+  display: flex;
+  background-color: #F4EFEB;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.livro-card:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  background-color: #fff8f3;
+  border-color: #34292A;
+}
+
+.livro-card .capa {
+  width: 100px;
+  height: 150px;
+  background-color: #A3A3A3;
+  border-radius: 4px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.livro-card .info h3 {
+  margin: 0;
+  font-weight: bold;
+  color: #34292A;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.livro-card .info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #34292A;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.livro-card .info span {
+  font-size: 13px;
+  color: #6E6464;
+  font-family: 'Istok Web', sans-serif;
+}
+
+/* ---------- GRID DE LIVROS CONCLUÍDOS ---------- */
+.livrosC-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 20px;
+  padding: 40px;
+  justify-items: center;
+  background-color: #FFFCFA;
+  border-radius: 0 0 10px 10px;
+  border-top: none; 
+}
+
+.livroC-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F4F1;
+  border-radius: 10px;
+  padding: 15px;
+  width: 140px;
+  min-height: 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 1px solid #E0D7CF;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.livroC-card:hover {
+  transform: scale(1.05);
+  border-color: #34292A;
+}
+
+.livroC-card .capa {
+  width: 100px;
+  height: 150px;
+  background-color: #BEB9B5;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 5px;
+}
+
+/* --- RESPONSIVIDADE HOME --- */
+
+@media (max-width: 1024px) {
+  .livrosC-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 15px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .viewH {
+    width: calc(100% - 24px); 
+    margin: 0 auto;
+    padding-bottom: 80px; 
+  }
+
+  .perfil {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .user-info {
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .cronometro {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .box-tempo {
+    margin-bottom: 10px;
+  }
+
+  .cronometro .tempo {
+    font-size: 50px;
+  }
+
+  .botao-tipo1 {
+    width: 100%; 
+  }
+
+  .tabs {
+    flex-direction: row;
+  }
+  
+  .tab {
+    font-size: 14px;
+    padding: 12px 5px;
+  }
+
+  .livros-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .livro-card {
+    flex-direction: row; 
+    align-items: center;
+  }
+
+  .livrosC-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+    padding: 20px;
+  }
+
+  .livroC-card {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .livrosC-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+}

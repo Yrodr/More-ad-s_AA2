@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Istok+Web&family=Zain&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+
+/* ---------- Configurações Gerais ---------- */
+body {
+  margin: 0;
+  background-color: #FFFCFA;
+  
+}
+
+.p{
+  font-family: 'Istok Web', sans-serif;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 32px;
+  color: #E2D6C7;
+  -webkit-text-stroke: 1px #34292A;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  font-family: 'Abril Fatface', cursive;
+  background: #fff;
+  border: 2px solid #34292A;
+  border-radius: 10px;
+  padding: 6px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #34292A;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: #b7a794;
+}
+
+.ativo {
+  background-color: #ECE4DA;
+}
+
+.sair {
+  color: #34292A;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+} 
+
+/* ----- Tipos de Botão ----- */
+.botao-tipo1{
+  font-family: 'Amaranth', sans-serif;
+  background-color: #34292A;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+a.botao-tipo1{
+  font-family: 'Amaranth', sans-serif;
+  background-color: #34292A;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.botao-tipo1:hover {
+  background-color: #3B2F2F; 
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+
+.botao-tipo1:active {
+  background-color: #6E6464; 
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.botao-tipo2 {
+  display: block;
+  font-family: 'Zain', sans-serif;
+  font-weight: bold;
+  color: #34292A;
+  background: #FFFCFA;
+  border: 2px solid #34292A;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.botao-tipo2:hover {
+  background-color: #34292A;
+  color: #FFFCFA;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.botao-tipo2:active {
+  transform: scale(0.98);
+}
+
+.botao-tipo3 {
+  display: block;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: normal;
+  color: #6E6464;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.botao-tipo3:hover {
+  color: #A13E3E;
+  text-decoration: underline;
+}
+
+
+/* MENU INFERIOR (para celular) */
+.menu-inferior {
+  display: none; 
+  justify-content: flex-start;
+  flex: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFCFA;
+  border-top: 1px solid #aaa;
+  z-index: 999;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.view-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item{
+  width: 30%;
+}
+
+.menu-inferior .menu-item {
+   flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #34292A;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 16px;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  border-bottom: none; 
+}
+
+.menu-inferior .menu-item:hover {
+  background-color: #ddd0c6;
+  color: #1e1e1e;
+}
+
+.menu-inferior .ativo {
+  border: 2px solid #34292A;
+  background-color: #ECE4DA;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+/* ======== CABEÇALHO MOBILE ======== */
+.header-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;             
+  width: 100%;
+  background-color: #FFFCFA;
+  display: none; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 18px;
+  border-bottom: 1px solid #d6ccc6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+  box-sizing: border-box;  
+  overflow-x: hidden;      
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header-mobile .logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 26px;
+  color: #3F322E;
+  color: #E2D6C7;
+  -webkit-text-stroke: 0.5px #34292A;
+}
+
+.header-mobile .logout-link {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3F322E;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.header-mobile .logout-link:hover {
+  color: #8C7F7A;
+}
+
+
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+  main {
+  margin-top: 70px;
+  }
+  header.desktop-header {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+
+  header {
+    display: none;
+  }
+  .menu-inferior {
+    display: block;
+  }
+  
+}
+

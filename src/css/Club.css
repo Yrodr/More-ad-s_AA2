@@ -1,0 +1,291 @@
+
+.view-club {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F4F1;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- Botão Principal ---------- */
+.botao-principal-club {
+  display: block;
+  margin: 0px 0px 40px 0px;
+  background-color: white;
+  color: #3c2f2f;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.botao-principal-club:hover {
+  transform: scale(1.02);
+  background-color: #fafafa;
+}
+
+/* ---------- Lista de Clubes ---------- */
+.lista-clubes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ---------- Card de Club ---------- */
+.card-club {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.coluna-esquerda-club {
+  flex-shrink: 0;
+}
+
+.img-club {
+  width: 140px;      
+  height: 210px;       
+  border-radius: 4px;
+  background-color: #ccc;
+  object-fit: cover;   
+}
+
+.coluna-direita-club {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 210px;
+}
+
+.info-club-main h2 {
+  font-family: 'Zain', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #2b2020;
+}
+
+.info-club-main h3 {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 16px;
+  margin: 5px 0 15px;
+  font-weight: 300;
+  color: #000;
+}
+
+.descricao-club {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0;
+  color: #333;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.info-extra-club {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.info-extra-club span {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-participar {
+  font-family: 'Zain', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 25px;
+  background-color: #34292A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-participar:hover {
+  background-color: #4b3f3f;
+}
+
+/* ===== MODAL CRIAR CLUBE ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-conteudo-club {
+  background: #fff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px 40px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 15px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+  line-height: 1;
+}
+
+.modal-conteudo-club h2 {
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+  font-size: 26px;
+  color: #2b2020;
+  margin-bottom: 20px;
+}
+
+.form-club {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-club label {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: bold;
+  color: #2b2020;
+  font-size: 16px;
+}
+
+.form-club p {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 14px;
+  margin: -10px 0 5px;
+  color: #666;
+}
+
+.form-club input,
+.form-club textarea,
+.form-club select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.form-club textarea {
+  resize: none;
+  height: 80px;
+}
+
+.datas-row {
+  display: flex;
+  gap: 20px;
+}
+
+.datas-row div {
+  flex: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- RESPONSIVIDADE CLUB --- */
+@media (max-width: 768px) {
+  .view-club {
+    width: calc(100% - 24px); 
+    margin: 30px auto 80px auto; 
+    padding: 20px 10px;
+  }
+  
+  .botao-principal-club {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .card-club {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .coluna-esquerda-club {
+    margin-bottom: 15px;
+  }
+
+  .img-club {
+    width: 110px;
+    height: 165px;
+  }
+
+  .coluna-direita-club {
+    width: 100%;
+    align-items: center;
+  }
+
+  .info-extra-club {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  .btn-participar {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .datas-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
